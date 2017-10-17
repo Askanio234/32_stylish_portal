@@ -4,7 +4,10 @@
 
 # Запуск
 - Установить [Nginx](http://nginx.org/ru/linux_packages.html) 
-- Скоприровать файл настроек в папку с установленным Nginx (при этом не зыбыв сделать бекап оригинального nginx.conf!)
+- Разместить символьную ссылку на файл конфигурации nginx в папке с проектом:
+```
+ln -s /etc/nginx/nginx.conf /home/32_stylish_portal/nginx.conf
+```
 - в файле после директивы alias указать путь к локальному css-файлу, наример: 
 ```
 alias home/32_stylish_portal/dist/style.css
